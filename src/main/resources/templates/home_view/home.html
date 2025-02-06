@@ -1,0 +1,67 @@
+<!DOCTYPE html> 
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detailed City Report Application</title>
+    <link rel="stylesheet" th:href="@{/css/styles.css}">
+</head>
+<body>
+    <div class="floating-shape"></div>
+    <div class="floating-shape"></div>
+    <div class="floating-shape"></div>   
+    <div class="container">
+        <h1>Generate Detailed City Report</h1>
+
+        <!-- Text Box for City List -->
+        <div class="form-group">
+            <label for="cities">Enter Cities (comma-separated, at least 10):</label>
+            <input type="text" id="cities" name="cities" class="form-control" placeholder="e.g., Ankara,Florence,Rome">
+            <small id="error-message" style="color: red; display: none;">Please enter at least 10 cities.</small>
+        </div>
+
+        <!-- Download Location Input -->
+        <div class="form-group">
+            <label for="download-location">Download Location:</label>
+            <input type="text" id="download-location" name="download-location" class="form-control" placeholder="Enter Download Location">
+            <small id="download-info" style="color: #888; font-size: 14px; display: block; margin-top: 5px;">
+                If no location is entered, the report will be saved to your default downloads folder.
+            </small>
+        </div>        
+
+        <!-- Button -->
+        <div class="form-group">
+            <button id="generateReportButton" class="btn btn-primary">Generate Report</button>
+        </div>
+
+        <!-- Status Message -->
+        <div id="statusMessage" style="margin-top: 10px; color: green;"></div>
+
+        <!-- Loading Tab (Hidden initially) -->
+        <div id="loadingTab" class="loading-tab" style="display: none;">
+            <div id="progressBar" class="progress-bar"></div>
+        </div>        
+        
+        <!-- Info Popup -->
+        <div id="infoPopup" class="popup" style="display: none;">
+            <div class="popup-content">
+                <span class="close-btn" id="closePopup">&times;</span>
+                <h2>Info</h2>
+                <p>
+                    Welcome to the Detailed City Report Application!<br><br>
+                    With this application, you can generate detailed reports for a list of cities. Simply enter at least 
+                    <strong>10 valid city names</strong>, and the app will retrieve comprehensive data for each city, 
+                    including <strong>current weather information</strong> tailored to each city’s <strong>time zone and 
+                    preferred units</strong>. The report will be automatically formatted into a <strong>Google Spreadsheet</strong> 
+                    and provided as a <strong>downloadable PDF</strong>.<br><br>
+                    This tool is perfect for users who want accurate city data at their fingertips! 🌍✨
+                </p>
+            </div>
+        </div>
+        <button id="infoButton" class="btn btn-info">Info</button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="/js/script.js"></script>
+</body>
+</html>

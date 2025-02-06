@@ -1,0 +1,234 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #ff7eb3, #ff758c, #c9ffbf, #74f9ff);
+    background-size: 400% 400%;
+    animation: gradientBG 10s ease infinite;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Gradient Animation */
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Floating Shapes */
+.floating-shape {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    animation: float 6s ease-in-out infinite;
+}
+
+.floating-shape:nth-child(1) {
+    top: 10%;
+    left: 20%;
+    animation-duration: 7s;
+}
+
+.floating-shape:nth-child(2) {
+    top: 40%;
+    left: 70%;
+    animation-duration: 9s;
+}
+
+.floating-shape:nth-child(3) {
+    top: 70%;
+    left: 30%;
+    animation-duration: 11s;
+}
+
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
+}
+
+.container {
+    max-width: 700px;
+    margin: 50px auto;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 16px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Header Style */
+h1 {
+    font-size: 32px;
+    background: linear-gradient(to right, #ff6b6b, #fddb92);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+/* Form Elements */
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-size: 16px;
+    color: #fddb92;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 14px;
+    font-size: 14px;
+    border: 2px solid #f06292;
+    border-radius: 8px;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #f5f5f5;
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    border-color: #4facfe;
+    background-color: rgba(255, 255, 255, 0.4);
+    outline: none;
+}
+
+/* Button Style */
+button {
+    padding: 14px 24px;
+    background: linear-gradient(135deg, #ff6b6b, #fddb92);
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+button:hover {
+    background: linear-gradient(135deg, #6dd5ed, #2193b0);
+    transform: scale(1.05);
+}
+
+#generateReportButton:disabled {
+    background: #888;
+    cursor: not-allowed;
+}
+
+/* Info Button Style */
+.btn-info {
+    padding: 14px 24px;
+    background: linear-gradient(135deg, #ff6b6b, #fddb92);
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    width: 100%; 
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    margin-bottom: 20px;
+}
+
+.btn-info:hover {
+    background: linear-gradient(135deg, #6dd5ed, #2193b0);
+    transform: scale(1.05);
+}
+
+/* Loading Tab */
+.loading-tab {
+    width: 100%; 
+    background-color: #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    height: 20px;
+    position: relative;
+    margin-top: 20px; 
+    margin-bottom: 20px; 
+    border: 1px solid #90caf9;
+    display: flex; 
+    align-items: center; 
+}
+
+/* Progress Bar */
+.loading-progress {
+    height: 100%;
+    background: linear-gradient(90deg, #2575fc , #6a11cb);
+    width: 0%; 
+    transition: width 0.4s ease;
+    box-shadow: inset 0 0 5px rgba(91, 82, 82, 0.1); 
+}
+
+/* Status Message */
+#statusMessage {
+    font-size: 16px;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+/* Popup Style */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+}
+
+.popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    padding: 30px;
+    border-radius: 12px;
+    color: white;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+    max-width: 400px;
+}
+
+.popup-content h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    background: linear-gradient(to right, #fddb92, #ff6b6b);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.popup-content p {
+    font-size: 16px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+
+/* General Spacing and Font Enhancements */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}

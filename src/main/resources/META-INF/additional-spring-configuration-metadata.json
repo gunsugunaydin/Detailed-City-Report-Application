@@ -1,0 +1,17 @@
+{"properties": [
+  {
+    "name": "google.application.name",
+    "type": "java.lang.String",
+    "description": "A description for 'google.application.name'"
+  },
+  {
+    "name": "google.credentials.path",
+    "type": "java.lang.String",
+    "description": "A description for 'google.credentials.path'"
+  },
+  {
+    "name": "Logging.level.org.gunsugunaydin",
+    "type": "java.lang.String",
+    "description": "A description for 'Logging.level.org.gunsugunaydin'"
+  }
+]}

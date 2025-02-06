@@ -1,0 +1,12 @@
+{
+  "cityList": ["Ankara", "Istanbul", "Florence", "Rome", "Marseille", "Seoul", "Madrid", "Tokyo", "Los Angeles", "New York"],
+  "apis": {
+      "cityApi": "https://api.api-ninjas.com/v1/city",
+      "weatherApi": "https://api.openweathermap.org/data/2.5/weather",
+      "countryApi": "https://restcountries.com/v3.1/alpha/"
+  },
+  "apiKeys": {
+      "cityApiKey": "Wk7BUtFyRitPFA/8QO5mOA==3o82rShW26SxlVVU",
+      "weatherApiKey": "45fc10f6036587ecf0459b50bf448295"
+  }
+}
