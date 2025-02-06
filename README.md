@@ -101,7 +101,7 @@ mvn spring-boot:run
 
 Explore the API documentation through Swagger at `http://localhost:8080/swagger-ui/index.html`.
 
-![image](https://github.com/user-attachments/assets/41e411fc-cd44-4f07-94ff-7addb21de585)
+![image](https://github.com/user-attachments/assets/839a8ba6-9d7d-45f2-af77-ea4f3e6e7679)
 
 Swagger UI Screenshot
 
