@@ -9,11 +9,11 @@ Below is a quick demo of the **Detailed City Report Application**. The demo is d
 
 ### Part 1: Downloading the Report to the Default Downloads Folder
 
-
+https://github.com/user-attachments/assets/77892a3d-4eb5-420b-9e44-150a860d4cbf
 
 ### Part 2: Downloading the Report to a Specified File Path
 
-
+https://github.com/user-attachments/assets/b9ff9400-c5fd-4122-bd17-48d85a962143
 
 ## Features
 
