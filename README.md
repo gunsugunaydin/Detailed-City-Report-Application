@@ -1,11 +1,11 @@
-# Detailed City Report Application <img src="https://media.tenor.com/TwkVSDkjf1MAAAAj/dudu-bubu-raining.gif" alt="Rainy Gif" width="50" height="50">
+# Detailed City Report Platform <img src="https://media.tenor.com/TwkVSDkjf1MAAAAj/dudu-bubu-raining.gif" alt="Rainy Gif" width="50" height="50">
 
-## Overview
-The **Detailed City Report Application** is a Spring Boot based application designed to generate detailed reports for a list of cities. The application retrieves data from external APIs, formats it into a Google Spreadsheet, and downloads it as a PDF. The project includes both backend and frontend components to deliver a seamless experience.
+## Overview  
+The **Detailed City Report Platform** is a Spring Boot-based solution (combining both an application and an API) designed to generate detailed reports for a list of cities. The platform retrieves data from external APIs, formats it into a Google Spreadsheet, and downloads it as a PDF. It includes both backend and frontend components to deliver a seamless experience.  
 
 ## Demo
 
-Below is a quick demo of the **Detailed City Report Application**. The demo is divided into two parts:
+Below is a quick demo of the **Detailed City Report Platform**. The demo is divided into two parts:
 
 ### Part 1: Downloading the Report to the Default Downloads Folder
 
@@ -68,14 +68,14 @@ https://github.com/user-attachments/assets/b9ff9400-c5fd-4122-bd17-48d85a962143
    google.credentials.path=/path/to/credentials.json
    server.port=8080
    ```
-5. Obtain and place Google Cloud service account credentials (`credentials.json`). Please don't try to use mine. Yes, I uploaded credentials to GitHub for reference purposes, but I intentionally included random alphanumeric values for security reasons — these are not my real credentials. If you want to run the application, you need to use your own credentials.
+5. Obtain and place Google Cloud service account credentials (`credentials.json`). Please don't try to use mine. Yes, I uploaded credentials to GitHub for reference purposes, but I intentionally included random alphanumeric values for security reasons — these are not my real credentials. If you want to work the application, you need to use your own credentials.
 
 ---
 
 ## Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/gunsugunaydin/Detailed-City-Report-Application
+   git clone https://github.com/gunsugunaydin/Detailed-City-Report-Platform
    cd detailed-city-report
    ```
 2. Build the project:
