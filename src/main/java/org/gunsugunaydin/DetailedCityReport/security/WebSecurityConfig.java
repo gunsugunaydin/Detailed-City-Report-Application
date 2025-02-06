@@ -11,8 +11,7 @@ import org.springframework.context.annotation.Configuration;
 public class WebSecurityConfig {
 
     @Bean
-    public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
-        
+    public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {     
         http
             .authorizeHttpRequests(requests -> 
                 requests.anyRequest().permitAll() 
