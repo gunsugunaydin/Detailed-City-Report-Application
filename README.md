@@ -68,7 +68,7 @@ https://github.com/user-attachments/assets/b9ff9400-c5fd-4122-bd17-48d85a962143
    google.credentials.path=/path/to/credentials.json
    server.port=8080
    ```
-5. Obtain and place Google Cloud service account credentials (`credentials.json`). Please don't try to use mine. Yes, I uploaded credentials to GitHub for reference purposes, but I intentionally included random alphanumeric values for security reasons — these are not my real credentials. If you want to work the application, you need to use your own credentials.
+5. Obtain and add your own Google Cloud service account credentials (`credentials.json`) to the project. Please note that the credentials I uploaded to GitHub are for reference purposes only and contain random alphanumeric values for security — these are not my real credentials. If you want the application to work properly, you need to use your own credentials
 
 ---
 
@@ -76,7 +76,7 @@ https://github.com/user-attachments/assets/b9ff9400-c5fd-4122-bd17-48d85a962143
 1. Clone the repository:
    ```bash
    git clone https://github.com/gunsugunaydin/Detailed-City-Report-Platform
-   cd detailed-city-report
+   cd detailed-city-report-platform
    ```
 2. Build the project:
    ```bash
@@ -115,16 +115,16 @@ Swagger UI Screenshot
 ---
 
 ## Future Enhancements
-- **Authentication & Authorization**: Implement OAuth2 for secure API access.
-- **Error Handling**: Centralized error handling for API calls.
-- **Deployment**: Dockerize the application for seamless deployment.
+- **Authentication & Authorization**: Implement OAuth2 or another secure authentication mechanism for restricted access to certain platform features or API endpoints.
+- **Error Handling**: Implement centralized error handling with proper logging and response codes to improve debugging and user experience.
+- **Deployment**: Dockerize the platform for seamless deployment.
 
 ---
 
 ## Limitations
-- The application requires a minimum of 10 cities for report generation.
-- Google Sheets API must be enabled and credentials configured properly.
-- Relies on external APIs for data retrieval; any downtime affects functionality.
+- The platform requires a minimum of 10 cities for report generation.
+- Google Sheets API must be enabled, and credentials configured properly in order for the platform to interact with Google Sheets.
+- Relies on external APIs for data retrieval; any downtime or rate limits imposed by the external APIs may affect the platform's functionality and data accuracy.
 
 ---
 
