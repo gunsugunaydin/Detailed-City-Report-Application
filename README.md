@@ -129,7 +129,7 @@ Swagger UI Screenshot
 ---
 
 ## Contact
-Please feel free to explore the code and share your feedback. I am always open to suggestions.
+Please feel free to explore the code and share your feedback. I am always open to suggestions and collaboration.
 
 <img src="https://media.tenor.com/v63_brUy45wAAAAi/peach-goma-love-peach-cat.gif" alt="Get in Touch Gif" width="50" height="50"> Get in Touch:
 
