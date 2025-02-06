@@ -131,7 +131,7 @@ Swagger UI Screenshot
 ## Contact
 Please feel free to explore the code and share your feedback. I am always open to suggestions and collaboration.
 
-<img src="https://media.tenor.com/v63_brUy45wAAAAi/peach-goma-love-peach-cat.gif" alt="Get in Touch Gif" width="50" height="50"> Get in Touch:
+<img src="[https://media.tenor.com/v63_brUy45wAAAAi/peach-goma-love-peach-cat.gif](https://kawaiihoshi.com/wp-content/uploads/2023/07/1-peach-goma-animations.gif)" alt="Get in Touch Gif" width="50" height="50"> Get in Touch:
 
 - **Email**: [gunsugunay98@gmail.com](mailto:gunsugunay98@gmail.com)
 - **LinkedIn**: [linkedin.com/in/gunsugunaydin](https://www.linkedin.com/in/gunsugunaydin/)
