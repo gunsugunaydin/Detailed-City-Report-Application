@@ -44,6 +44,8 @@ Below is a quick demo of the **Detailed City Report Application**. The demo is d
 
 ### Configuration
 1. Create a `config.json` file in the `resources` folder or use mine 🫠:
+
+
    ```json
    {
      "cityList": ["Ankara", "Istanbul", "Florence", "Rome", "Marseille", "Seoul", "Madrid", "Tokyo", "Los Angeles", "New York"],
@@ -58,13 +60,15 @@ Below is a quick demo of the **Detailed City Report Application**. The demo is d
      }
    }
    ```
-2. Set up `application.properties`:
+3. Set up `application.properties`:
+
+
    ```properties
    google.application.name=Detailed City Report
    google.credentials.path=/path/to/credentials.json
    server.port=8080
    ```
-3. Obtain and place Google Cloud service account credentials (`credentials.json`). Please don't try to use mine. Yes, I uploaded credentials to GitHub for reference purposes, but I intentionally included random alphanumeric values for security reasons — these are not my real credentials. If you want to run the application, you need to use your own credentials.
+5. Obtain and place Google Cloud service account credentials (`credentials.json`). Please don't try to use mine. Yes, I uploaded credentials to GitHub for reference purposes, but I intentionally included random alphanumeric values for security reasons — these are not my real credentials. If you want to run the application, you need to use your own credentials.
 
 ---
 
@@ -112,7 +116,6 @@ Swagger UI Screenshot
 
 ## Future Enhancements
 - **Authentication & Authorization**: Implement OAuth2 for secure API access.
-- **Enhanced UI**: Add advanced styling and responsive design.
 - **Error Handling**: Centralized error handling for API calls.
 - **Deployment**: Dockerize the application for seamless deployment.
 
