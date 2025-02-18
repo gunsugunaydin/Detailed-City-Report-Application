@@ -70,7 +70,7 @@ document.getElementById('generateReportButton').addEventListener('click', functi
             statusMessage.style.color = 'red';
         } else {
             statusMessage.innerHTML = data.message;
-            statusMessage.style.color = 'green';
+            statusMessage.style.color = 'rgb(24, 201, 24)';
             triggerRealisticConfetti();
 
             showSuccessAnimation();
