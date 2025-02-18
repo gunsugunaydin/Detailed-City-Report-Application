@@ -1,7 +1,8 @@
+/* Body Style */
 body {
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(135deg, #ff7eb3, #ff758c, #c9ffbf, #74f9ff);
-    background-size: 400% 400%;
+    background: linear-gradient(135deg, #1e3c72, #3b5998, #6678eb, #8a2be2);
+    background-size: 300% 300%;
     animation: gradientBG 10s ease infinite;
     color: #fff;
     margin: 0;
@@ -9,45 +10,10 @@ body {
     overflow-x: hidden;
 }
 
-/* Gradient Animation */
 @keyframes gradientBG {
     0% { background-position: 0% 50%; }
     50% { background-position: 100% 50%; }
     100% { background-position: 0% 50%; }
-}
-
-/* Floating Shapes */
-.floating-shape {
-    position: absolute;
-    width: 80px;
-    height: 80px;
-    background-color: rgba(255, 255, 255, 0.2);
-    border-radius: 50%;
-    animation: float 6s ease-in-out infinite;
-}
-
-.floating-shape:nth-child(1) {
-    top: 10%;
-    left: 20%;
-    animation-duration: 7s;
-}
-
-.floating-shape:nth-child(2) {
-    top: 40%;
-    left: 70%;
-    animation-duration: 9s;
-}
-
-.floating-shape:nth-child(3) {
-    top: 70%;
-    left: 30%;
-    animation-duration: 11s;
-}
-
-@keyframes float {
-    0% { transform: translateY(0); }
-    50% { transform: translateY(-20px); }
-    100% { transform: translateY(0); }
 }
 
 .container {
@@ -93,7 +59,7 @@ input {
     border: 2px solid #f06292;
     border-radius: 8px;
     box-sizing: border-box;
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(254, 248, 248, 0.2);
     color: #f5f5f5;
     transition: all 0.3s ease;
 }
@@ -231,4 +197,9 @@ button:hover {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+input::placeholder {
+    color: #cecccc; 
+    opacity: 1; 
 }
