@@ -9,11 +9,11 @@ Below is a quick demo of the **Detailed City Report Platform**. The demo is divi
 
 ### Part 1: Downloading the Report to the Default Downloads Folder
 
-https://github.com/user-attachments/assets/77892a3d-4eb5-420b-9e44-150a860d4cbf
+https://github.com/user-attachments/assets/560e7d74-c0cb-4696-a5be-f4671bd5c0bb
 
 ### Part 2: Downloading the Report to a Specified File Path
 
-https://github.com/user-attachments/assets/b9ff9400-c5fd-4122-bd17-48d85a962143
+https://github.com/user-attachments/assets/4d559f0f-6c48-4d3d-83dc-4840722672b2
 
 ## Features
 
