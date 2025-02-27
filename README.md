@@ -30,7 +30,6 @@ https://github.com/user-attachments/assets/4d559f0f-6c48-4d3d-83dc-4840722672b2
 - Uses asynchronous API calls with `CompletableFuture` to enhance performance for long city lists.
 - Automatically avoids overwriting reports by appending unique identifiers to filenames.
 
----
 
 ## Prerequisites
 ### Tools
@@ -44,7 +43,6 @@ https://github.com/user-attachments/assets/4d559f0f-6c48-4d3d-83dc-4840722672b2
 
 ### Configuration
 1. Create a `config.json` file in the `resources` folder or use mine 🫠:
-
 
    ```json
    {
@@ -60,7 +58,8 @@ https://github.com/user-attachments/assets/4d559f0f-6c48-4d3d-83dc-4840722672b2
      }
    }
    ```
-3. Set up `application.properties`:
+   
+2. Set up `application.properties`:
 
 
    ```properties
@@ -68,9 +67,9 @@ https://github.com/user-attachments/assets/4d559f0f-6c48-4d3d-83dc-4840722672b2
    google.credentials.path=/path/to/credentials.json
    server.port=8080
    ```
-5. Obtain and add your own Google Cloud service account credentials (`credentials.json`) to the project. Please note that the credentials I uploaded to GitHub are for reference purposes only and contain random alphanumeric values for security — these are not my real credentials. If you want the application to work properly, you need to use your own credentials
+   
+3. Obtain and add your own Google Cloud service account credentials (`credentials.json`) to the project. Please note that the credentials I uploaded to GitHub are for reference purposes only and contain random alphanumeric values for security — these are not my real credentials. If you want the application to work properly, you need to use your own credentials
 
----
 
 ## Installation
 1. Clone the repository:
@@ -96,7 +95,7 @@ code .
 mvn clean install
 mvn spring-boot:run
 ```
----
+
 ## Usage and API Documentation
 
 Explore the API documentation through Swagger at `http://localhost:8080/swagger-ui/index.html`.
@@ -112,21 +111,18 @@ Swagger UI Screenshot
 - `POST /api/v1/googlesheets/generate-report`: Generate and download the report programmatically.
 - `GET /api/v1/weather/report-weather`: Fetch weather data for predefined cities.
 
----
 
 ## Future Enhancements
 - **Authentication & Authorization**: Implement OAuth2 or another secure authentication mechanism for restricted access to certain platform features or API endpoints.
 - **Error Handling**: Implement centralized error handling with proper logging and response codes to improve debugging and user experience.
 - **Deployment**: Dockerize the platform for seamless deployment.
 
----
 
 ## Limitations
 - The platform requires a minimum of 10 cities for report generation.
 - Google Sheets API must be enabled, and credentials configured properly in order for the platform to interact with Google Sheets.
 - Relies on external APIs for data retrieval; any downtime or rate limits imposed by the external APIs may affect the platform's functionality and data accuracy.
 
----
 
 ## Contact
 Please feel free to explore the code and share your feedback. I am always open to suggestions and collaboration.
