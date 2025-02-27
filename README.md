@@ -68,7 +68,7 @@ https://github.com/user-attachments/assets/4d559f0f-6c48-4d3d-83dc-4840722672b2
    google.credentials.path=/path/to/credentials.json
    server.port=8080
    ```
-5. Obtain and add your own Google Cloud service account credentials (`credentials.json`) to the project. Please note that the credentials I uploaded to GitHub are for reference purposes only and contain random alphanumeric values for security — these are not my real credentials. If you want the application to work properly, you need to use your own credentials
+5. Obtain and add your own Google Cloud service account credentials (credentials.json) to the project. Ensure that your credentials file is properly configured to enable access to Google Sheets API.
 
 ---
 
