@@ -38,37 +38,7 @@ https://github.com/user-attachments/assets/4d559f0f-6c48-4d3d-83dc-4840722672b2
 - **Spring Boot 3.x**
 - Maven 3.6+
 - Google Cloud account with Sheets and Drive API enabled
-- API keys for:
-  - [City API](https://www.api-ninjas.com/api/city)
-  - [OpenWeather API](https://openweathermap.org/current)
 
-### Configuration
-1. Create a `config.json` file in the `resources` folder or use mine 🫠:
-
-
-   ```json
-   {
-     "cityList": ["Ankara", "Istanbul", "Florence", "Rome", "Marseille", "Seoul", "Madrid", "Tokyo", "Los Angeles", "New York"],
-     "apis": {
-       "cityApi": "https://api.api-ninjas.com/v1/city",
-       "weatherApi": "https://api.openweathermap.org/data/2.5/weather",
-       "countryApi": "https://restcountries.com/v3.1/alpha/"
-     },
-     "apiKeys": {
-       "cityApiKey": "city_api_key",
-       "weatherApiKey": "weather_api_key"
-     }
-   }
-   ```
-3. Set up `application.properties`:
-
-
-   ```properties
-   google.application.name=Detailed City Report
-   google.credentials.path=/path/to/credentials.json
-   server.port=8080
-   ```
-5. Obtain and add your own Google Cloud service account credentials (credentials.json) to the project. Ensure that your credentials file is properly configured to enable access to Google Sheets API.
 
 ---
 
