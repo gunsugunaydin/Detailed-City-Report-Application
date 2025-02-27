@@ -85,16 +85,18 @@ https://github.com/user-attachments/assets/4d559f0f-6c48-4d3d-83dc-4840722672b2
    ```bash
    mvn spring-boot:run
    ```
-  Alternatively:
-  ```bash
-    # Download the project as a ZIP file and extract it
-    # Navigate to the extracted folder and open the terminal
-    code .
-    
-    # After opening the project, follow the steps below:
-    mvn clean install
-    mvn spring-boot:run
-  ```
+   
+&nbsp;&nbsp;Alternatively:
+&nbsp;&nbsp;```bash
+&nbsp;&nbsp;# Download the project as a ZIP file and extract it
+&nbsp;&nbsp;# Navigate to the extracted folder and open the terminal
+&nbsp;&nbsp;code .
+&nbsp;&nbsp;
+&nbsp;&nbsp;# After opening the project, follow the steps below:
+&nbsp;&nbsp;mvn clean install
+&nbsp;&nbsp;mvn spring-boot:run
+&nbsp;&nbsp;```
+
 
 ## Usage and API Documentation
 
